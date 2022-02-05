@@ -4,7 +4,6 @@ import com.loiane.estruturadados.vetor.Vetor;
 
 public class Aula6 {
 
-
     public static void main(String[] args) {
 
         Vetor vetor = new Vetor(10);
