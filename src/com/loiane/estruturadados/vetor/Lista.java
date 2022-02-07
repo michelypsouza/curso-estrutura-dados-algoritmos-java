@@ -93,6 +93,10 @@ public class Lista<T> {
         return this.tamanho;
     }
 
+    public boolean contem(T elemento){
+        return busca(elemento) >= 0; // > -1
+    }
+
     public String toString() {
 
         StringBuilder s = new StringBuilder();
