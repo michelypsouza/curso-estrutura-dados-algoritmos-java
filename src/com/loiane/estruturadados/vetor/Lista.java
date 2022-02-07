@@ -121,6 +121,11 @@ public class Lista<T> {
         return busca(posicao);
     }
 
+    //metodo do exercicio 05 do modulo 1 do curso
+    public void limpar() {
+        this.elementos = (T[]) new Object[this.elementos.length];
+    }
+
         public String toString() {
 
         StringBuilder s = new StringBuilder();
