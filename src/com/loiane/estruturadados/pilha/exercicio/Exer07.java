@@ -2,7 +2,7 @@ package com.loiane.estruturadados.pilha.exercicio;
 
 import java.util.Stack;
 
-public class Exerc07 {
+public class Exer07 {
 
     public static void main(String[] args) {
 
