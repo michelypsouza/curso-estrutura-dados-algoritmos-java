@@ -19,7 +19,13 @@ public class Fila<T> extends EstruturaEstatica<T> {
         //this.elementos[this.tamanho++] = elemento;
 
         this.adiciona(elemento);
+    }
 
+    public T espiar(){
+        if (this.estaVazia()) {
+            return null;
+        }
+        return this.elementos[0];
     }
 
 }
