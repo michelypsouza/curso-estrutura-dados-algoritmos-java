@@ -93,8 +93,19 @@ public class Lista<T> {
         return this.tamanho;
     }
 
+    //metodo do exercicio 01 do modulo 1 do curso
     public boolean contem(T elemento){
         return busca(elemento) >= 0; // > -1
+    }
+
+    //metodo do exercicio 02 do modulo 1 do curso
+    public int ultimoIndice(T elemento){
+        for (int i=this.tamanho-1; i >= 0; i--){
+            if (this.elementos[i].equals(elemento)){
+                return i;
+            }
+        }
+        return -1;
     }
 
     public String toString() {
