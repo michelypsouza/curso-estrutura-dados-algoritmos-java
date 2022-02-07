@@ -18,7 +18,7 @@ public class Exer01 {
 
             int numero = scanner.nextInt();
 
-            // se o numero for par vamops empilhar
+            // se o numero for par vamos empilhar
             if (numero % 2 == 0) {
 
                 System.out.println("Número par, empilhando o número: " + numero);
@@ -44,7 +44,7 @@ public class Exer01 {
             System.out.println("Desempilhando um elemento da pilha: "
                     + pilha.desempilha());
         }
-        System.out.println("Todos os elementos foram desempilhando.");
+        System.out.println("Todos os elementos foram desempilhados.");
 
     }
 
