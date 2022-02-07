@@ -108,6 +108,14 @@ public class Lista<T> {
         return -1;
     }
 
+    //metodo do exercicio 03 do modulo 1 do curso
+    public void remove(T elemento){
+        int indice = busca(elemento);
+        if (indice >= 0) {
+            remove(indice);
+        }
+    }
+
     public String toString() {
 
         StringBuilder s = new StringBuilder();
