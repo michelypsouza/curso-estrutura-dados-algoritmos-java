@@ -123,7 +123,11 @@ public class Lista<T> {
 
     //metodo do exercicio 05 do modulo 1 do curso
     public void limpar() {
-        this.elementos = (T[]) new Object[this.elementos.length];
+        //this.elementos = (T[]) new Object[this.elementos.length];
+        for (int i=0; i<this.tamanho; i++){
+            this.elementos[i] = null;
+        }
+        this.tamanho = 0;
     }
 
         public String toString() {
