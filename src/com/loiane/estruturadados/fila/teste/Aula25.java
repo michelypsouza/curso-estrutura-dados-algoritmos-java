@@ -48,6 +48,8 @@ public class Aula25 {
         filaComPrioridadePac.add(new Paciente("D",4));
         filaComPrioridadePac.add(new Paciente("C",3));
 
+        //System.out.println(filaComPrioridadePac);
+
         System.out.println(filaComPrioridadePac.poll());
         System.out.println(filaComPrioridadePac.poll());
         System.out.println(filaComPrioridadePac.poll());
