@@ -12,8 +12,15 @@ public class Aula25 {
 
         filaComPrioridade.add(2);
         filaComPrioridade.add(1);
+        filaComPrioridade.add(4);
+        filaComPrioridade.add(3);
 
-        System.out.println(filaComPrioridade);
+        //System.out.println(filaComPrioridade);
+
+        System.out.println(filaComPrioridade.poll());
+        System.out.println(filaComPrioridade.poll());
+        System.out.println(filaComPrioridade.poll());
+        System.out.println(filaComPrioridade.poll());
 
         /*
 
@@ -32,23 +39,19 @@ public class Aula25 {
         Queue<Paciente> filaComPrioridadePac = new PriorityQueue<>(new Comparator<Paciente>() {
             @Override
             public int compare(Paciente p1, Paciente p2) {
-                /*
-                if (p1.getPrioridade() > p2.getPrioridade()) {
-                    return 1;
-                } else if (p1.getPrioridade() < p2.getPrioridade()) {
-                    return -1;
-                }
-                return 0;
-                */
                 return Integer.valueOf(p1.getPrioridade()).compareTo(p2.getPrioridade());
             }
         });
 
         filaComPrioridadePac.add(new Paciente("A",2));
         filaComPrioridadePac.add(new Paciente("B",1));
+        filaComPrioridadePac.add(new Paciente("D",4));
+        filaComPrioridadePac.add(new Paciente("C",3));
 
-        System.out.println(filaComPrioridadePac);
-
+        System.out.println(filaComPrioridadePac.poll());
+        System.out.println(filaComPrioridadePac.poll());
+        System.out.println(filaComPrioridadePac.poll());
+        System.out.println(filaComPrioridadePac.poll());
 
     }
 
