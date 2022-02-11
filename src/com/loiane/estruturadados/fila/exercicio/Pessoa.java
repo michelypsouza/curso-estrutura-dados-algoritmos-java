@@ -26,6 +26,7 @@ public class Pessoa implements Comparable<Pessoa> {
         this.prioridade = prioridade;
     }
 
+    //Pessoas com prioridade vermelha devem ser atendidas primeiro, VERMELHO = 0, AMARELO = 1 e VERDE = 2, seguira esta ordem
     @Override
     public int compareTo(Pessoa o) {
         return Integer.compare(this.prioridade, o.getPrioridade());
